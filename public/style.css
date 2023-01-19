@@ -1,0 +1,8 @@
+body {
+	background-color: rgb(223, 148, 99)
+}
+
+.completed {
+	text-decoration: line-through blueviolet;
+}
+

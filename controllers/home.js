@@ -18,20 +18,20 @@ module.exports = {
 			console.error(err)
 		}
 	},
-	markComplete: async (req, res) => {
+	markComplete: async (req, res) => { 
 		try {
-			await Todo.findOneAndUpdate({_id: req.body.itemFromJS, completed: true})
+			await Todo.findOneAndUpdate({_id: req.body.itemFromJS}, {completed: true})
 			console.log('Marked Complete')
 			res.json('Marked complete')
 		} catch (err) {
 			console.error(err)
 		}
 	},
-	markIncomplete: async (req, res) => {
+	markIncomplete: async (req, res) => { 
 		try {
-			await Todo.findOneAndUpdate({_id: req.body.itemFromJS, completed: false})
-			console.log('Marked Complete')
-			res.json('Marked complete')
+			await Todo.findOneAndUpdate({_id: req.body.itemFromJS}, {completed: false})
+			console.log('Marked InComplete')
+			res.json('Marked Incomplete')
 		} catch (err) {
 			console.error(err)
 		}

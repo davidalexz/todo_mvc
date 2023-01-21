@@ -9,6 +9,6 @@ const TodoSchema = new mongoose.Schema({
     type: Boolean,
     required: true,
   }
-})
+}, { collection: 'todos_mvc'})
 
 module.exports = mongoose.model('Todo', TodoSchema)

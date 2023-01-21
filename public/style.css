@@ -3,6 +3,6 @@ body {
 }
 
 .completed {
-	text-decoration: line-through blueviolet;
+	text-decoration: line-through rgb(64, 226, 43) 2px;
 }
 

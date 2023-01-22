@@ -5,6 +5,7 @@ module.exports = {
 		try {
 			const todoItems = await Todo.find()
 			res.render('index.ejs', {todos: todoItems})
+			console.log(todoItems)
 		} catch(err) {
 			console.error(err)
 		}

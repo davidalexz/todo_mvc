@@ -1,4 +1,5 @@
 const mongoose = require('mongoose')
+mongoose.pluralize(null)  //prevents mongoose to pluralize collection names
 mongoose.set('strictQuery', false);
 
 const connectDB = async () => {
